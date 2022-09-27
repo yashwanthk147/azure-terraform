@@ -1,0 +1,3 @@
+variable "LOCATION" {}
+
+variable "NAME" {}
