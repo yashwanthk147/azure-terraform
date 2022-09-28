@@ -1,3 +1,3 @@
-variable "LOCATION" {}
+variable "zone_location" {}
 
-variable "NAME" {}
+variable "resource_name" {}

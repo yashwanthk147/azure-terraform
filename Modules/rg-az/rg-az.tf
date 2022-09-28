@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "terraform-group" {
   
-  name = var.NAME
-  location = var.LOCATION
+  name = "${var.resource_name}-${terraform.workspace}-rg"
+  location = var.zone_location
 
   tags = {
-    environment = "Terraform Demo"
+    environment = terraform.workspace
   }
 }
 
